@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Luau Developer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#131c2e',
+                        cardHover: '#1a263f',
+                        accent: '#3b82f6',
+                        accentHover: '#2563eb'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="IconV2.jpg" alt="Profile Icon" class="w-10 h-10 rounded-xl object-cover border border-slate-700 shadow-md">
+                <span class="font-bold text-lg tracking-wide bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">LuauScript.dev</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#projects" class="hover:text-accent transition">Featured Project</a>
+                <a href="#code" class="hover:text-accent transition">Code Preview</a>
+                <a href="#services" class="hover:text-accent transition">Services</a>
+            </nav>
+            <a href="https://www.fiverr.com" target="_blank" class="bg-accent hover:bg-accentHover text-white px-4 py-2 rounded-xl text-sm font-semibold transition shadow-lg shadow-blue-600/30 flex items-center space-x-2">
+                <span>Hire on Fiverr</span>
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-blue-600/5 blur-3xl pointer-events-none rounded-full max-w-lg mx-auto"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+            <span class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs px-3.5 py-1.5 rounded-full font-medium">
+                <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                Available for Custom Roblox Commissions & Fiverr Orders
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                Roblox Luau Developer & <br><span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-400 bg-clip-text text-transparent">Game Systems Architect</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                Transforming creative concepts into clean, performant, and scalable game mechanics, inventory systems, and multiplayer loops.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="#projects" class="bg-accent hover:bg-accentHover text-white px-6 py-3 rounded-xl font-medium transition shadow-lg shadow-blue-500/25 flex items-center space-x-2">
+                    <i data-lucide="gamepad-2" class="w-5 h-5"></i>
+                    <span>View Stack or Splat</span>
+                </a>
+                <a href="#services" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-6 py-3 rounded-xl font-medium transition flex items-center space-x-2">
+                    <i data-lucide="layers" class="w-5 h-5"></i>
+                    <span>What I Offer</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section id="projects" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-3">Featured Roblox Game</h2>
+            <p class="text-slate-400">Complete production-ready multiplayer experience engineered in Roblox Studio.</p>
+        </div>
+
+        <div class="bg-cardBg border border-slate-800/80 rounded-2xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 md:p-8">
+            <!-- Video & Images -->
+            <div class="lg:col-span-7 space-y-4">
+                <div class="rounded-xl overflow-hidden border border-slate-700 bg-black aspect-video relative shadow-inner">
+                    <video controls class="w-full h-full object-cover">
+                        <source src="Empilhar ou Espalhar - Roblox Studio 2026-10-13 12-01-46.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="ThumbnailV2.jpg" alt="Thumbnail" class="rounded-xl border border-slate-700 object-cover h-28 w-full shadow-md">
+                    <img src="Logo-removebg-preview.jpg" alt="Logo" class="rounded-xl border border-slate-700 object-contain h-28 w-full bg-slate-900/60 p-2 shadow-md">
+                </div>
+            </div>
+
+            <!-- Project Info -->
+            <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs px-2.5 py-1 rounded-md font-semibold">Luau Scripting</span>
+                        <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs px-2.5 py-1 rounded-md font-semibold">Multiplayer Physics</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Stack or Splat (Unstable Tower)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        An advanced physics-based stacking game featuring custom turn management, rotation/dropping math, server events, lobby systems, and complete persistence.
+                    </p>
+
+                    <div class="space-y-2.5 pt-2">
+                        <div class="flex items-start text-sm text-slate-300">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-accent mr-2 mt-0.5 shrink-0"></i>
+                            <span><strong>Turn-Based Spawner:</strong> Custom object selector, rotation, and drop physics handler.</span>
+                        </div>
+                        <div class="flex items-start text-sm text-slate-300">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-accent mr-2 mt-0.5 shrink-0"></i>
+                            <span><strong>Server Disasters:</strong> Dynamic environment triggers like Earthquakes shaking tower stability.</span>
+                        </div>
+                        <div class="flex items-start text-sm text-slate-300">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-accent mr-2 mt-0.5 shrink-0"></i>
+                            <span><strong>Party & Lobbies:</strong> Matchmaking support with customizable private room settings.</span>
+                        </div>
+                        <div class="flex items-start text-sm text-slate-300">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-accent mr-2 mt-0.5 shrink-0"></i>
+                            <span><strong>Economy & Data:</strong> Fully integrated Shop, item skins, boosters, and DataStore saving.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-800">
+                    <a href="https://www.fiverr.com" target="_blank" class="w-full bg-accent hover:bg-accentHover text-white py-3 rounded-xl text-center font-semibold text-sm transition flex items-center justify-center space-x-2 shadow-lg shadow-blue-600/20">
+                        <span>Order Systems Like This on Fiverr</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Snippet Showcase -->
+    <section id="code" class="py-16 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold mb-3">Clean & Modular Luau Code</h2>
+            <p class="text-slate-400">Written with high performance, readability, and security in mind.</p>
+        </div>
+
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+            <div class="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+                    <span class="ml-3 text-xs font-mono text-slate-400">ObjectSpawner_Server.luau</span>
+                </div>
+                <span class="text-xs text-blue-400 font-mono bg-blue-500/10 px-2.5 py-1 rounded border border-blue-500/20">Server Script</span>
+            </div>
+            <div class="p-6 overflow-x-auto">
+                <pre class="text-sm font-mono text-slate-300 leading-relaxed"><code><span class="text-purple-400">local</span> ReplicatedStorage = <span class="text-blue-300">game</span>:<span class="text-yellow-300">GetService</span>(<span class="text-emerald-300">"ReplicatedStorage"</span>)
+<span class="text-purple-400">local</span> TweenService = <span class="text-blue-300">game</span>:<span class="text-yellow-300">GetService</span>(<span class="text-emerald-300">"TweenService"</span>)
+
+<span class="text-purple-400">local</span> ObjectSpawner = {}
+ObjectSpawner.__index = ObjectSpawner
+
+<span class="text-purple-400">function</span> ObjectSpawner.<span class="text-yellow-300">new</span>(spawnModel: Model)
+    <span class="text-purple-400">local</span> <span class="text-blue-300">self</span> = <span class="text-yellow-300">setmetatable</span>({}, ObjectSpawner)
+    <span class="text-blue-300">self</span>.Model = spawnModel
+    <span class="text-blue-300">self</span>.IsActive = <span class="text-orange-400">false</span>
+    <span class="text-purple-400">return</span> <span class="text-blue-300">self</span>
+<span class="text-purple-400">end</span>
+
+<span class="text-purple-400">function</span> ObjectSpawner:<span class="text-yellow-300">DropObject</span>(player: Player, dropCFrame: CFrame)
+    <span class="text-slate-500">-- Server-side validation & physics placement</span>
+    <span class="text-purple-400">local</span> objectClone = <span class="text-blue-300">self</span>.Model:<span class="text-yellow-300">Clone</span>()
+    objectClone.PrimaryPart.CFrame = dropCFrame
+    objectClone.Parent = workspace.ActiveTower
+    
+    <span class="text-purple-400">print</span>(player.Name ..<span class="text-emerald-300">" successfully dropped item on tower!"</span>)
+<span class="text-purple-400">end</span>
+
+<span class="text-purple-400">return</span> ObjectSpawner</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-3">Development Services</h2>
+            <p class="text-slate-400">What I can build or fix for your Roblox experience.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-cardBg hover:bg-cardHover border border-slate-800 transition rounded-2xl p-6 space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-accent flex items-center justify-center">
+                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white">Custom Mechanics & Systems</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Inventories, shops, trading, level progression, custom movement controllers, and interactive gameplay loops.
+                </p>
+            </div>
+
+            <div class="bg-cardBg hover:bg-cardHover border border-slate-800 transition rounded-2xl p-6 space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-accent flex items-center justify-center">
+                    <i data-lucide="database" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white">Data Persistence</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Secure DataStore / ProfileService implementation with auto-saving, session locking, and error handling.
+                </p>
+            </div>
+
+            <div class="bg-cardBg hover:bg-cardHover border border-slate-800 transition rounded-2xl p-6 space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-accent flex items-center justify-center">
+                    <i data-lucide="Wrench" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white">Bug Fixing & Optimization</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Refactoring messy codebases, debugging memory leaks, improving performance, and fixing replication bugs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="py-16 px-4 max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-cardBg to-slate-900 border border-slate-800 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden shadow-2xl">
+            <div class="absolute inset-0 bg-blue-500/5 blur-2xl pointer-events-none">events</div>
+            <h2 class="text-3xl font-bold mb-4 relative z-10">Let's build your next Roblox game</h2>
+            <p class="text-slate-400 max-w-lg mx-auto mb-8 relative z-10 text-sm md:text-base">
+                Have a project in mind or need a reliable scripter? Reach out on Fiverr to discuss your requirements.
+            </p>
+            <a href="https://www.fiverr.com" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accentHover text-white px-8 py-3.5 rounded-xl font-semibold transition shadow-xl shadow-blue-600/30 relative z-10">
+                <i data-lucide="external-link" class="w-5 h-5"></i>
+                <span>Hire Me on Fiverr</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 px-4 text-center text-sm text-slate-500 bg-darkBg">
+        <p>&copy; 2026 Roblox Luau Developer Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script
